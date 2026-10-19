@@ -34,6 +34,7 @@
     th { background: #333; color: #fff; }
     tr:hover { background: #f0f8ff; }
     .count { margin: 10px 0; color: #555; font-size: 14px; }
+    .error { color: #b00020; }
 
     @media (max-width: 800px) {
       .layout { flex-direction: column; }
@@ -51,14 +52,14 @@
       <p class="shop-name">布丁汀汀のCD Store</p>
       <p class="shop-desc">一只正在努力营业的越南小店张-布丁布丁</p>
       <div class="can-sing">
-        <strong>Có thể hát:</strong><br>
+        <strong>Can sing:</strong><br>
         <span>Chinese</span><span>Vietnamese</span><span>English</span><span>Korea</span><span>Japanese</span>
       </div>
 
-      <h3>Các bài hát mới đang học</h3>
+      <h3>New song being learned</h3>
       <ul id="learning"></ul>
 
-      <h3>Các bài hát đề xuất</h3>
+      <h3>Suggested songs</h3>
       <ul id="recommended"></ul>
     </aside>
 
@@ -110,11 +111,19 @@
     const recommendedEl = document.getElementById('recommended');
     const avatarEl = document.getElementById('avatar');
 
-    // Load both data files, then build the page
-    Promise.all([
-      fetch('songs.json').then(r => r.json()),
-      fetch('profile.json').then(r => r.json())
-    ])
+    // Load each file separately so the error message says which one failed
+    function loadJson(file) {
+      return fetch(file)
+        .then(res => {
+          if (!res.ok) throw new Error(`${file} not found (HTTP ${res.status})`);
+          return res.json();
+        })
+        .catch(err => {
+          throw new Error(`${file}: ${err.message}`);
+        });
+    }
+
+    Promise.all([loadJson('songs.json'), loadJson('profile.json')])
       .then(([songData, profileData]) => {
         songs = songData;
         profile = profileData;
@@ -129,8 +138,8 @@
         renderSidebar();
         render();
       })
-      .catch(() => {
-        countEl.textContent = 'Could not load data files. Please check songs.json and profile.json.';
+      .catch(err => {
+        countEl.innerHTML = `<span class="error">Could not load data. ${err.message}</span>`;
       });
 
     // Find a song by its No.
