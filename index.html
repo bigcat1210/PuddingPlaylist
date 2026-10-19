@@ -37,7 +37,7 @@
     <thead>
       <tr>
         <th>No.</th>
-        <th>Songs</th>
+        <th>Song</th>
         <th>In Vietnamese</th>
         <th>Singer版本</th>
         <th>Language</th>
@@ -61,8 +61,8 @@
       .then(res => res.json())
       .then(data => {
         songs = data;
-        fillOptions(languageEl, [...new Set(songs.map(s => s.language).filter(Boolean))]);
-        fillOptions(singerEl, [...new Set(songs.map(s => s['singer版本']).filter(v => v && v !== 'None'))]);
+        fillOptions(languageEl, [...new Set(songs.map(s => s['Language']).filter(Boolean))]);
+        fillOptions(singerEl, [...new Set(songs.map(s => s['Singer版本']).filter(v => v && v !== 'None'))]);
         render();
       })
       .catch(() => {
@@ -87,22 +87,22 @@
 
       const result = songs.filter(s => {
         const matchKeyword = !keyword ||
-          (s.song || '').toLowerCase().includes(keyword) ||
-          (s.inVietnamese || '').toLowerCase().includes(keyword) ||
-          (s['singer版本'] || '').toLowerCase().includes(keyword);
-        const matchLanguage = !language || s.language === language;
-        const matchSinger = !singer || s['singer版本'] === singer;
+          (s['Song'] || '').toLowerCase().includes(keyword) ||
+          (s['In Vietnamese'] || '').toLowerCase().includes(keyword) ||
+          (s['Singer版本'] || '').toLowerCase().includes(keyword);
+        const matchLanguage = !language || s['Language'] === language;
+        const matchSinger = !singer || s['Singer版本'] === singer;
         return matchKeyword && matchLanguage && matchSinger;
       });
 
       tableBodyEl.innerHTML = result.map(s => `
         <tr>
-          <td>${s.no ?? ''}</td>
-          <td>${s.song ?? ''}</td>
-          <td>${s.inVietnamese ?? ''}</td>
-          <td>${s['singer版本'] === 'None' ? '' : (s['singer版本'] ?? '')}</td>
-          <td>${s.language ?? ''}</td>
-          <td>${s.note ?? ''}</td>
+          <td>${s['No.'] ?? ''}</td>
+          <td>${s['Song'] ?? ''}</td>
+          <td>${s['In Vietnamese'] ?? ''}</td>
+          <td>${s['Singer版本'] === 'None' ? '' : (s['Singer版本'] ?? '')}</td>
+          <td>${s['Language'] ?? ''}</td>
+          <td>${s['Note'] ?? ''}</td>
         </tr>
       `).join('');
 
