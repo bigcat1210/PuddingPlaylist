@@ -39,7 +39,7 @@
         <th>No.</th>
         <th>Songs</th>
         <th>In Vietnamese</th>
-        <th>Singer</th>
+        <th>Singer版本</th>
         <th>Language</th>
         <th>Note</th>
       </tr>
@@ -62,7 +62,7 @@
       .then(data => {
         songs = data;
         fillOptions(languageEl, [...new Set(songs.map(s => s.language).filter(Boolean))]);
-        fillOptions(singerEl, [...new Set(songs.map(s => s.singer).filter(v => v && v !== 'None'))]);
+        fillOptions(singerEl, [...new Set(songs.map(s => s['singer版本']).filter(v => v && v !== 'None'))]);
         render();
       })
       .catch(() => {
@@ -89,9 +89,9 @@
         const matchKeyword = !keyword ||
           (s.song || '').toLowerCase().includes(keyword) ||
           (s.inVietnamese || '').toLowerCase().includes(keyword) ||
-          (s.singer || '').toLowerCase().includes(keyword);
+          (s['singer版本'] || '').toLowerCase().includes(keyword);
         const matchLanguage = !language || s.language === language;
-        const matchSinger = !singer || s.singer === singer;
+        const matchSinger = !singer || s['singer版本'] === singer;
         return matchKeyword && matchLanguage && matchSinger;
       });
 
@@ -100,7 +100,7 @@
           <td>${s.no ?? ''}</td>
           <td>${s.song ?? ''}</td>
           <td>${s.inVietnamese ?? ''}</td>
-          <td>${s.singer === 'None' ? '' : (s.singer ?? '')}</td>
+          <td>${s['singer版本'] === 'None' ? '' : (s['singer版本'] ?? '')}</td>
           <td>${s.language ?? ''}</td>
           <td>${s.note ?? ''}</td>
         </tr>
