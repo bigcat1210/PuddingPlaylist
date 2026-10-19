@@ -1443,7 +1443,7 @@
     "No.": 181,
     "Song": "遇见却不留下",
     "In Vietnamese": "Gặp nhưng không ở lại",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1483,7 +1483,7 @@
     "No.": 186,
     "Song": "忧愁的一天",
     "In Vietnamese": "Một ngày buồn",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1491,7 +1491,7 @@
     "No.": 187,
     "Song": "昔日芳华",
     "In Vietnamese": "Diễm Xưa",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1499,7 +1499,7 @@
     "No.": 188,
     "Song": "还有多少年华",
     "In Vietnamese": "Còn tuổi nào cho em",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1507,7 +1507,7 @@
     "No.": 189,
     "Song": "给你的秋天",
     "In Vietnamese": "Mùa Thu Cho Em",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1515,7 +1515,7 @@
     "No.": 190,
     "Song": "绿叶之秋",
     "In Vietnamese": "Mùa Thu Lá Xanh",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1523,7 +1523,7 @@
     "No.": 191,
     "Song": "今天下午没有飘雨",
     "In Vietnamese": "Chiều Nay Không Có Mưa Bay",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
@@ -1531,85 +1531,85 @@
     "No.": 192,
     "Song": "沙发上的孤独",
     "In Vietnamese": "Cô Đơn Trên Sofa",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Vietnamese",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 193,
-    "Song": "",
-    "In Vietnamese": "Born This Way - Lady Gaga",
-    "Singer版本": "",
+    "Song": "Born This Way",
+    "In Vietnamese": "Born This Way",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 194,
-    "Song": "",
+    "Song": "Always Remember Us This Way",
     "In Vietnamese": "Always Remember Us This Way",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 195,
-    "Song": "",
+    "Song": "Someone Like You",
     "In Vietnamese": "Someone Like You",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 196,
-    "Song": "",
+    "Song": "Sway",
     "In Vietnamese": "Sway",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 197,
-    "Song": "",
+    "Song": "Kiss while your lips are still red",
     "In Vietnamese": "Kiss while your lips are still red",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 198,
-    "Song": "",
+    "Song": "Hey There Delilah",
     "In Vietnamese": "Hey There Delilah",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 199,
-    "Song": "",
+    "Song": "Flashlight",
     "In Vietnamese": "Flashlight",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 200,
-    "Song": "",
+    "Song": "Say Something",
     "In Vietnamese": "Say Something",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 201,
-    "Song": "",
+    "Song": "Mercy",
     "In Vietnamese": "Mercy",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "English",
     "Note": "流行 Hiện đại"
   },
   {
     "No.": 202,
-    "Song": "",
+    "Song": "Hug",
     "In Vietnamese": "Hug",
     "Singer版本": "TVXQ",
     "Language": "Korea",
@@ -1617,7 +1617,7 @@
   },
   {
     "No.": 203,
-    "Song": "",
+    "Song": "Four Season",
     "In Vietnamese": "Four Season",
     "Singer版本": "TaeYeon",
     "Language": "Korea",
@@ -1625,7 +1625,7 @@
   },
   {
     "No.": 204,
-    "Song": "",
+    "Song": "I'll Show You",
     "In Vietnamese": "I'll Show You",
     "Singer版本": "Ailee",
     "Language": "Korea",
@@ -1633,42 +1633,10 @@
   },
   {
     "No.": 205,
-    "Song": "",
+    "Song": "Love Battery",
     "In Vietnamese": "Love Battery",
-    "Singer版本": "",
+    "Singer版本": "None",
     "Language": "Korea",
     "Note": "流行 Hiện đại"
-  },
-  {
-    "No.": 206,
-    "Song": "",
-    "In Vietnamese": "",
-    "Singer版本": "",
-    "Language": "",
-    "Note": ""
-  },
-  {
-    "No.": 207,
-    "Song": "",
-    "In Vietnamese": "",
-    "Singer版本": "",
-    "Language": "",
-    "Note": ""
-  },
-  {
-    "No.": 208,
-    "Song": "",
-    "In Vietnamese": "",
-    "Singer版本": "",
-    "Language": "",
-    "Note": ""
-  },
-  {
-    "No.": 209,
-    "Song": "",
-    "In Vietnamese": "",
-    "Singer版本": "",
-    "Language": "",
-    "Note": ""
   }
 ]
