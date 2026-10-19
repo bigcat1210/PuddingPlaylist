@@ -62,7 +62,7 @@
       .then(data => {
         songs = data;
         fillOptions(languageEl, [...new Set(songs.map(s => s.language).filter(Boolean))]);
-        fillOptions(singerEl, [...new Set(songs.map(s => s.singer).filter(Boolean))]);
+        fillOptions(singerEl, [...new Set(songs.map(s => s.singer).filter(v => v && v !== 'None'))]);
         render();
       })
       .catch(() => {
@@ -100,7 +100,7 @@
           <td>${s.no ?? ''}</td>
           <td>${s.song ?? ''}</td>
           <td>${s.inVietnamese ?? ''}</td>
-          <td>${s.singer ?? ''}</td>
+          <td>${s.singer === 'None' ? '' : (s.singer ?? '')}</td>
           <td>${s.language ?? ''}</td>
           <td>${s.note ?? ''}</td>
         </tr>
